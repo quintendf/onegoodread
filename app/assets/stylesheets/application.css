@@ -37,7 +37,8 @@ h2 {
 	 font-size: 36px;
 	 line-height: 46px;
 	 margin: 0px 0px 25px 0px;
-	 font-family: "Futura BT W01 Medium";
+	 font-family: 'Droid Sans', sans-serif;
+	 font-weight: 700; 
 	 text-align: left;
 }
 
@@ -58,7 +59,8 @@ p {
 	 text-transform: inherit;
 	 font-size: 24px;
 	 width: 520.40625px;
-	 font-family: "FuturaBTW01-LightItalic";
+	 font-family: 'Gentium Book Basic', serif;
+	 font-weight: 400; 
 	 text-align: left;
 }
 
