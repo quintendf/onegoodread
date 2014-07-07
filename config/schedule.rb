@@ -5,7 +5,7 @@
 
 # Example:
 #
-set :output, "/path/to/my/cron_log.log"
+#set :output, "/path/to/my/cron_log.log"
 #
 every 10.hours do
    rake "scrape_feed:feed"
