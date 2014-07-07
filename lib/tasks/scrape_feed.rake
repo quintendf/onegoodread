@@ -6,7 +6,9 @@ namespace :scrape_feed do
     json = JSON.parse(response.body)
     linksArray = Array.new    
     json['channel']['item'].each do |item|
-      linksArray.push(item['link'])
+      unless(item['link'].include?("longreads.com"))
+        linksArray.push(item['link'])
+      end
     end
     row = Article.create!({
         :link => linksArray

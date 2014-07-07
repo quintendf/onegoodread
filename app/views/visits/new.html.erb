@@ -1,11 +1,10 @@
 <script type="text/javascript">
 var url = '<%=escape_javascript @redirectLink %>'
-<!--
 function delayer(){
     window.location = url
 }
-timeoutCall = setTimeout('delayer()', 3000)
-//-->
+timeoutCall = setTimeout('delayer()', 2000)
 </script>
-<h2>Finding you one good read...</h2>
+<h2>Sending you to one good read...</h2>
+<p><%= link_to "Go now.", @redirectLink %></p>
 <p><%= link_to "What is this?", 'visits/about' %></p>
