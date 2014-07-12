@@ -5,7 +5,7 @@ require 'httparty'
 class VisitsController < ApplicationController
 
 	def new
-		@redirectLink = Article.last.link[rand(Article.last.link.length)]
+		@redirectLink = Article.offset(rand(Article.count)).first.link
 
 	end
 end
