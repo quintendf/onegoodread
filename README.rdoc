@@ -1,28 +1,9 @@
-== README
+This was an experiment in finding frictionless ways to get people to great, longform content. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I put together an RSS feed from a few different sources (like Longreads, The New Yorker, etc). Via a rake task (scheduled daily on heroku), I check that feed for new links and add them to a database.
 
-Things you may want to cover:
+Each visitor to onegoodread.me is automatically redirected to a single piece of longform content, which is found by randomly selecting from the existing database of thinks.
 
-* Ruby version
+To-do's might include user tracking (via cookie) to avoid duplicate links, and the concept of channels (such as onegoodread.me/cs for CS papers). 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+There was a good discussion of the idea on Product Hunt: http://www.producthunt.com/posts/onegoodread
