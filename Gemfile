@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 gem 'json'
 gem 'httparty'
 gem 'whenever', :require => false
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'devise'
 
 
 # Use ActiveModel has_secure_password
